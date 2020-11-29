@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B095D27325746CC200415169 /* UninstallerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095D27225746CC200415169 /* UninstallerApp.swift */; };
+		B095D27525746CC200415169 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095D27425746CC200415169 /* ContentView.swift */; };
+		B095D27725746CC200415169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B095D27625746CC200415169 /* Assets.xcassets */; };
+		B095D27A25746CC200415169 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B095D27925746CC200415169 /* Preview Assets.xcassets */; };
+		B095D28625746CC300415169 /* UninstallerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095D28525746CC300415169 /* UninstallerTests.swift */; };
+		B095D29125746CC300415169 /* UninstallerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095D29025746CC300415169 /* UninstallerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B095D28225746CC300415169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B095D26725746CC200415169 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B095D26E25746CC200415169;
+			remoteInfo = Uninstaller;
+		};
+		B095D28D25746CC300415169 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B095D26725746CC200415169 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B095D26E25746CC200415169;
+			remoteInfo = Uninstaller;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B095D26F25746CC200415169 /* Uninstaller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Uninstaller.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B095D27225746CC200415169 /* UninstallerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UninstallerApp.swift; sourceTree = "<group>"; };
+		B095D27425746CC200415169 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B095D27625746CC200415169 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B095D27925746CC200415169 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B095D27B25746CC200415169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B095D27C25746CC200415169 /* Uninstaller.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Uninstaller.entitlements; sourceTree = "<group>"; };
+		B095D28125746CC300415169 /* UninstallerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UninstallerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B095D28525746CC300415169 /* UninstallerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UninstallerTests.swift; sourceTree = "<group>"; };
+		B095D28725746CC300415169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B095D28C25746CC300415169 /* UninstallerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UninstallerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B095D29025746CC300415169 /* UninstallerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UninstallerUITests.swift; sourceTree = "<group>"; };
+		B095D29225746CC300415169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B095D26C25746CC200415169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B095D27E25746CC300415169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B095D28925746CC300415169 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B095D26625746CC200415169 = {
+			isa = PBXGroup;
+			children = (
+				B095D27125746CC200415169 /* Uninstaller */,
+				B095D28425746CC300415169 /* UninstallerTests */,
+				B095D28F25746CC300415169 /* UninstallerUITests */,
+				B095D27025746CC200415169 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B095D27025746CC200415169 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B095D26F25746CC200415169 /* Uninstaller.app */,
+				B095D28125746CC300415169 /* UninstallerTests.xctest */,
+				B095D28C25746CC300415169 /* UninstallerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B095D27125746CC200415169 /* Uninstaller */ = {
+			isa = PBXGroup;
+			children = (
+				B095D27225746CC200415169 /* UninstallerApp.swift */,
+				B095D27425746CC200415169 /* ContentView.swift */,
+				B095D27625746CC200415169 /* Assets.xcassets */,
+				B095D27B25746CC200415169 /* Info.plist */,
+				B095D27C25746CC200415169 /* Uninstaller.entitlements */,
+				B095D27825746CC200415169 /* Preview Content */,
+			);
+			path = Uninstaller;
+			sourceTree = "<group>";
+		};
+		B095D27825746CC200415169 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B095D27925746CC200415169 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B095D28425746CC300415169 /* UninstallerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B095D28525746CC300415169 /* UninstallerTests.swift */,
+				B095D28725746CC300415169 /* Info.plist */,
+			);
+			path = UninstallerTests;
+			sourceTree = "<group>";
+		};
+		B095D28F25746CC300415169 /* UninstallerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B095D29025746CC300415169 /* UninstallerUITests.swift */,
+				B095D29225746CC300415169 /* Info.plist */,
+			);
+			path = UninstallerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B095D26E25746CC200415169 /* Uninstaller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B095D29525746CC300415169 /* Build configuration list for PBXNativeTarget "Uninstaller" */;
+			buildPhases = (
+				B095D26B25746CC200415169 /* Sources */,
+				B095D26C25746CC200415169 /* Frameworks */,
+				B095D26D25746CC200415169 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Uninstaller;
+			productName = Uninstaller;
+			productReference = B095D26F25746CC200415169 /* Uninstaller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B095D28025746CC300415169 /* UninstallerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B095D29825746CC300415169 /* Build configuration list for PBXNativeTarget "UninstallerTests" */;
+			buildPhases = (
+				B095D27D25746CC300415169 /* Sources */,
+				B095D27E25746CC300415169 /* Frameworks */,
+				B095D27F25746CC300415169 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B095D28325746CC300415169 /* PBXTargetDependency */,
+			);
+			name = UninstallerTests;
+			productName = UninstallerTests;
+			productReference = B095D28125746CC300415169 /* UninstallerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B095D28B25746CC300415169 /* UninstallerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B095D29B25746CC300415169 /* Build configuration list for PBXNativeTarget "UninstallerUITests" */;
+			buildPhases = (
+				B095D28825746CC300415169 /* Sources */,
+				B095D28925746CC300415169 /* Frameworks */,
+				B095D28A25746CC300415169 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B095D28E25746CC300415169 /* PBXTargetDependency */,
+			);
+			name = UninstallerUITests;
+			productName = UninstallerUITests;
+			productReference = B095D28C25746CC300415169 /* UninstallerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B095D26725746CC200415169 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					B095D26E25746CC200415169 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					B095D28025746CC300415169 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = B095D26E25746CC200415169;
+					};
+					B095D28B25746CC300415169 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = B095D26E25746CC200415169;
+					};
+				};
+			};
+			buildConfigurationList = B095D26A25746CC200415169 /* Build configuration list for PBXProject "Uninstaller" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B095D26625746CC200415169;
+			productRefGroup = B095D27025746CC200415169 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B095D26E25746CC200415169 /* Uninstaller */,
+				B095D28025746CC300415169 /* UninstallerTests */,
+				B095D28B25746CC300415169 /* UninstallerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B095D26D25746CC200415169 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B095D27A25746CC200415169 /* Preview Assets.xcassets in Resources */,
+				B095D27725746CC200415169 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B095D27F25746CC300415169 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B095D28A25746CC300415169 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B095D26B25746CC200415169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B095D27525746CC200415169 /* ContentView.swift in Sources */,
+				B095D27325746CC200415169 /* UninstallerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B095D27D25746CC300415169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B095D28625746CC300415169 /* UninstallerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B095D28825746CC300415169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B095D29125746CC300415169 /* UninstallerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B095D28325746CC300415169 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B095D26E25746CC200415169 /* Uninstaller */;
+			targetProxy = B095D28225746CC300415169 /* PBXContainerItemProxy */;
+		};
+		B095D28E25746CC300415169 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B095D26E25746CC200415169 /* Uninstaller */;
+			targetProxy = B095D28D25746CC300415169 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B095D29325746CC300415169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B095D29425746CC300415169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B095D29625746CC300415169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Uninstaller/Uninstaller.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Uninstaller/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Uninstaller/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = la.melvin.Uninstaller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B095D29725746CC300415169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Uninstaller/Uninstaller.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Uninstaller/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Uninstaller/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = la.melvin.Uninstaller;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B095D29925746CC300415169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = UninstallerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = la.melvin.UninstallerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Uninstaller.app/Contents/MacOS/Uninstaller";
+			};
+			name = Debug;
+		};
+		B095D29A25746CC300415169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = UninstallerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = la.melvin.UninstallerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Uninstaller.app/Contents/MacOS/Uninstaller";
+			};
+			name = Release;
+		};
+		B095D29C25746CC300415169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = UninstallerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = la.melvin.UninstallerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Uninstaller;
+			};
+			name = Debug;
+		};
+		B095D29D25746CC300415169 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = UninstallerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = la.melvin.UninstallerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Uninstaller;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B095D26A25746CC200415169 /* Build configuration list for PBXProject "Uninstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B095D29325746CC300415169 /* Debug */,
+				B095D29425746CC300415169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B095D29525746CC300415169 /* Build configuration list for PBXNativeTarget "Uninstaller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B095D29625746CC300415169 /* Debug */,
+				B095D29725746CC300415169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B095D29825746CC300415169 /* Build configuration list for PBXNativeTarget "UninstallerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B095D29925746CC300415169 /* Debug */,
+				B095D29A25746CC300415169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B095D29B25746CC300415169 /* Build configuration list for PBXNativeTarget "UninstallerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B095D29C25746CC300415169 /* Debug */,
+				B095D29D25746CC300415169 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B095D26725746CC200415169 /* Project object */;
+}
