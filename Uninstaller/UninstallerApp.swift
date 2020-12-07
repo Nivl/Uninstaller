@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct UninstallerApp: App {
+struct UninstallerApp: App {  
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -13,6 +13,13 @@
 		B095D27A25746CC200415169 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B095D27925746CC200415169 /* Preview Assets.xcassets */; };
 		B095D28625746CC300415169 /* UninstallerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095D28525746CC300415169 /* UninstallerTests.swift */; };
 		B095D29125746CC300415169 /* UninstallerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095D29025746CC300415169 /* UninstallerUITests.swift */; };
+		B095D2D4257473F200415169 /* IntalledApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095D2D3257473F200415169 /* IntalledApp.swift */; };
+		B095D2D92574741800415169 /* InstalledAppRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095D2D82574741800415169 /* InstalledAppRow.swift */; };
+		B095D2E92574771300415169 /* InstalledAppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095D2E82574771300415169 /* InstalledAppData.swift */; };
+		B095D2FD2574836700415169 /* InstalledAppList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095D2FC2574836700415169 /* InstalledAppList.swift */; };
+		B095D302257486EB00415169 /* FSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095D301257486EB00415169 /* FSManager.swift */; };
+		B0AE0543257DA2B1006A3361 /* InstalledAppDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE0542257DA2B1006A3361 /* InstalledAppDetail.swift */; };
+		B0AE055C257DD3DE006A3361 /* EmptyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE055B257DD3DE006A3361 /* EmptyDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +53,13 @@
 		B095D28C25746CC300415169 /* UninstallerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UninstallerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B095D29025746CC300415169 /* UninstallerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UninstallerUITests.swift; sourceTree = "<group>"; };
 		B095D29225746CC300415169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B095D2D3257473F200415169 /* IntalledApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntalledApp.swift; sourceTree = "<group>"; };
+		B095D2D82574741800415169 /* InstalledAppRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalledAppRow.swift; sourceTree = "<group>"; };
+		B095D2E82574771300415169 /* InstalledAppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalledAppData.swift; sourceTree = "<group>"; };
+		B095D2FC2574836700415169 /* InstalledAppList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalledAppList.swift; sourceTree = "<group>"; };
+		B095D301257486EB00415169 /* FSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSManager.swift; sourceTree = "<group>"; };
+		B0AE0542257DA2B1006A3361 /* InstalledAppDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalledAppDetail.swift; sourceTree = "<group>"; };
+		B0AE055B257DD3DE006A3361 /* EmptyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,12 +110,19 @@
 		B095D27125746CC200415169 /* Uninstaller */ = {
 			isa = PBXGroup;
 			children = (
+				B095D2E6257475C400415169 /* Models */,
+				B095D2DD2574751600415169 /* Resources */,
 				B095D27225746CC200415169 /* UninstallerApp.swift */,
 				B095D27425746CC200415169 /* ContentView.swift */,
+				B0AE055B257DD3DE006A3361 /* EmptyDetailView.swift */,
+				B0AE0542257DA2B1006A3361 /* InstalledAppDetail.swift */,
 				B095D27625746CC200415169 /* Assets.xcassets */,
 				B095D27B25746CC200415169 /* Info.plist */,
 				B095D27C25746CC200415169 /* Uninstaller.entitlements */,
+				B095D2D82574741800415169 /* InstalledAppRow.swift */,
 				B095D27825746CC200415169 /* Preview Content */,
+				B095D2FC2574836700415169 /* InstalledAppList.swift */,
+				B095D301257486EB00415169 /* FSManager.swift */,
 			);
 			path = Uninstaller;
 			sourceTree = "<group>";
@@ -109,6 +130,7 @@
 		B095D27825746CC200415169 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				B095D2E82574771300415169 /* InstalledAppData.swift */,
 				B095D27925746CC200415169 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -130,6 +152,21 @@
 				B095D29225746CC300415169 /* Info.plist */,
 			);
 			path = UninstallerUITests;
+			sourceTree = "<group>";
+		};
+		B095D2DD2574751600415169 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B095D2E6257475C400415169 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B095D2D3257473F200415169 /* IntalledApp.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +298,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0AE055C257DD3DE006A3361 /* EmptyDetailView.swift in Sources */,
+				B095D2FD2574836700415169 /* InstalledAppList.swift in Sources */,
 				B095D27525746CC200415169 /* ContentView.swift in Sources */,
+				B095D2E92574771300415169 /* InstalledAppData.swift in Sources */,
+				B095D302257486EB00415169 /* FSManager.swift in Sources */,
+				B095D2D92574741800415169 /* InstalledAppRow.swift in Sources */,
 				B095D27325746CC200415169 /* UninstallerApp.swift in Sources */,
+				B095D2D4257473F200415169 /* IntalledApp.swift in Sources */,
+				B0AE0543257DA2B1006A3361 /* InstalledAppDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
