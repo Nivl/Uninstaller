@@ -11,23 +11,15 @@ struct InstalledAppList: View {
     @Binding var selectedApp: InstalledApp?
     
     // TODO(melvin): inject
-    var fs: FSManager = DefaultFSManager();
+    @ObservedObject var fs: Fetcher = AppFetcher();
     
     var body: some View {
         // TODO(melvin): build list async
         List(selection: $selectedApp) {
-            ForEach(self.fetchInstalledAppData(), id: \.name) { installedApp in
+            ForEach(fs.installedApp, id: \.name) { installedApp in
                 InstalledAppRow(installedApp: installedApp).tag(installedApp)
             }
         }
-    }
-
-    func fetchInstalledAppData() -> [InstalledApp] {
-        var items: [InstalledApp] = []
-        fs.getInstalledApp { (installedApp) in
-            items.append(installedApp)
-        }
-        return items
     }
 }
 

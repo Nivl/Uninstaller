@@ -7,16 +7,27 @@
 
 import Foundation
 
-protocol FSManager {
-    func getInstalledApp(progress: (InstalledApp)->()) -> Void
+
+class Fetcher: ObservableObject {
+    @Published var installedApp = [InstalledApp]()
 }
 
-enum FSError: Error {
-    case read(URL, Error)
-    case parse(URL, Error)
-}
-
-struct DefaultFSManager: FSManager {
+class AppFetcher: Fetcher {
+    override init() {
+        super.init()
+        
+        DispatchQueue.global(qos: .userInitiated).async {
+            var items: [InstalledApp] = []
+            self.getInstalledApp { (installedApp) in
+                items.append(installedApp)
+            }
+            
+            DispatchQueue.main.async {
+                self.installedApp = items
+            }
+        }
+    }
+    
     func getInstalledApp(progress: (InstalledApp)->()) -> Void {
         let fm = FileManager.default
         let resourceKeys = Set<URLResourceKey>([.nameKey, .isDirectoryKey])
@@ -86,6 +97,12 @@ struct DefaultFSManager: FSManager {
         }
     }
 }
+
+enum FSError: Error {
+    case read(URL, Error)
+    case parse(URL, Error)
+}
+
 
 struct AppInfo: Decodable {
     var CFBundleDisplayName: String?

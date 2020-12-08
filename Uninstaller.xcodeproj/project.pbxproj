@@ -17,7 +17,7 @@
 		B095D2D92574741800415169 /* InstalledAppRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095D2D82574741800415169 /* InstalledAppRow.swift */; };
 		B095D2E92574771300415169 /* InstalledAppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095D2E82574771300415169 /* InstalledAppData.swift */; };
 		B095D2FD2574836700415169 /* InstalledAppList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095D2FC2574836700415169 /* InstalledAppList.swift */; };
-		B095D302257486EB00415169 /* FSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095D301257486EB00415169 /* FSManager.swift */; };
+		B095D302257486EB00415169 /* AppFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B095D301257486EB00415169 /* AppFetcher.swift */; };
 		B0AE0543257DA2B1006A3361 /* InstalledAppDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE0542257DA2B1006A3361 /* InstalledAppDetail.swift */; };
 		B0AE055C257DD3DE006A3361 /* EmptyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0AE055B257DD3DE006A3361 /* EmptyDetailView.swift */; };
 /* End PBXBuildFile section */
@@ -57,7 +57,7 @@
 		B095D2D82574741800415169 /* InstalledAppRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalledAppRow.swift; sourceTree = "<group>"; };
 		B095D2E82574771300415169 /* InstalledAppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalledAppData.swift; sourceTree = "<group>"; };
 		B095D2FC2574836700415169 /* InstalledAppList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalledAppList.swift; sourceTree = "<group>"; };
-		B095D301257486EB00415169 /* FSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSManager.swift; sourceTree = "<group>"; };
+		B095D301257486EB00415169 /* AppFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFetcher.swift; sourceTree = "<group>"; };
 		B0AE0542257DA2B1006A3361 /* InstalledAppDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstalledAppDetail.swift; sourceTree = "<group>"; };
 		B0AE055B257DD3DE006A3361 /* EmptyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,7 +122,7 @@
 				B095D2D82574741800415169 /* InstalledAppRow.swift */,
 				B095D27825746CC200415169 /* Preview Content */,
 				B095D2FC2574836700415169 /* InstalledAppList.swift */,
-				B095D301257486EB00415169 /* FSManager.swift */,
+				B095D301257486EB00415169 /* AppFetcher.swift */,
 			);
 			path = Uninstaller;
 			sourceTree = "<group>";
@@ -302,7 +302,7 @@
 				B095D2FD2574836700415169 /* InstalledAppList.swift in Sources */,
 				B095D27525746CC200415169 /* ContentView.swift in Sources */,
 				B095D2E92574771300415169 /* InstalledAppData.swift in Sources */,
-				B095D302257486EB00415169 /* FSManager.swift in Sources */,
+				B095D302257486EB00415169 /* AppFetcher.swift in Sources */,
 				B095D2D92574741800415169 /* InstalledAppRow.swift in Sources */,
 				B095D27325746CC200415169 /* UninstallerApp.swift in Sources */,
 				B095D2D4257473F200415169 /* IntalledApp.swift in Sources */,
