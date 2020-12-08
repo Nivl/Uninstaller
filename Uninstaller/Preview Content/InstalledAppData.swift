@@ -16,5 +16,12 @@ class AppFetcherPreview: Fetcher {
     override init() {
         super.init()
         self.installedApp = installedAppData
+        self.status = FetcherStatus.fetched
+    }
+    
+    init(status: FetcherStatus) {
+        super.init()
+        self.status = status
+        self.installedApp = installedAppData
     }
 }

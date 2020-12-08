@@ -10,21 +10,26 @@ import SwiftUI
 struct InstalledAppList: View {
     @Binding var selectedApp: InstalledApp?
     
-    // TODO(melvin): inject
-    @ObservedObject var fs: Fetcher = AppFetcher();
+    @ObservedObject var fetcher: Fetcher = AppFetcher();
     
     var body: some View {
-        // TODO(melvin): build list async
-        List(selection: $selectedApp) {
-            ForEach(fs.installedApp, id: \.name) { installedApp in
-                InstalledAppRow(installedApp: installedApp).tag(installedApp)
+        switch fetcher.status {
+        case FetcherStatus.fetched:
+            List(selection: $selectedApp) {
+                ForEach(fetcher.installedApp, id: \.name) { installedApp in
+                    InstalledAppRow(installedApp: installedApp).tag(installedApp)
+                }
             }
+        case FetcherStatus.fetching:
+            Text("fetching apps...")
         }
     }
 }
 
 struct InstalledAppList_Previews: PreviewProvider {
     static var previews: some View {
-        InstalledAppList(selectedApp: .constant(installedAppData[0]))
+        InstalledAppList(selectedApp: .constant(installedAppData[0]), fetcher: AppFetcherPreview())
+        
+        InstalledAppList(selectedApp: .constant(installedAppData[0]), fetcher: AppFetcherPreview(status: FetcherStatus.fetching))
     }
 }

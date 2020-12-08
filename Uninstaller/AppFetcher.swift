@@ -7,23 +7,43 @@
 
 import Foundation
 
+enum FetcherStatus {
+    case fetching
+    case fetched
+}
 
 class Fetcher: ObservableObject {
     @Published var installedApp = [InstalledApp]()
+    @Published var status = FetcherStatus.fetching
 }
+
+var AppFetcherCache = [InstalledApp]()
 
 class AppFetcher: Fetcher {
     override init() {
         super.init()
         
-        DispatchQueue.global(qos: .userInitiated).async {
+        if AppFetcherCache.count > 0 {
+            self.status = FetcherStatus.fetched
+            self.installedApp = AppFetcherCache
+        } else {
+            fetch()
+        }
+    }
+    
+    func fetch() {
+        self.status = FetcherStatus.fetching
+        
+        DispatchQueue.global(qos: .userInitiated).async {           
             var items: [InstalledApp] = []
             self.getInstalledApp { (installedApp) in
                 items.append(installedApp)
             }
             
             DispatchQueue.main.async {
+                self.status = FetcherStatus.fetched
                 self.installedApp = items
+                AppFetcherCache = items
             }
         }
     }
