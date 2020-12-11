@@ -6,10 +6,11 @@
 //
 
 import Foundation
-import AppKit
 
-struct InstalledApp: Decodable, Hashable {   
+struct InstalledApp: Hashable {    
     var name: String
     var path: URL
     var iconPath: URL
+    var dataLocations: [PathInfo]
+    var uninstallerPath: String?
 }

@@ -21,7 +21,7 @@ struct ContentView: View {
             .frame(width: 300)
             
             if selectedApp != nil {
-                InstalledAppDetail(installedApp: selectedApp!)
+                InstalledAppDetailView(installedApp: selectedApp!)
                     .frame(minWidth: 700, idealWidth: 900, maxWidth: .infinity, maxHeight: .infinity)
             } else {
                 EmptyDetailView()

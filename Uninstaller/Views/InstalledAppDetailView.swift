@@ -7,18 +7,16 @@
 
 import SwiftUI
 
-struct InstalledAppDetail: View {
+struct InstalledAppDetailView: View {
     var installedApp: InstalledApp
     
     var body: some View {
-        ScrollView{
-            Text("Content of \(installedApp.name)")
-        }
+        PathInfoList(pathInfos: installedApp.dataLocations)
     }
 }
 
 struct InstalledAppDetail_Previews: PreviewProvider {
     static var previews: some View {
-        InstalledAppDetail(installedApp: installedAppData[0])
+        InstalledAppDetailView(installedApp: installedAppData[0])
     }
 }

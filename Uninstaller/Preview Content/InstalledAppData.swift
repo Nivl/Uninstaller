@@ -8,8 +8,22 @@
 import SwiftUI
 
 let installedAppData: [InstalledApp] = [
-    InstalledApp(name: "Safari", path: URL(fileURLWithPath: "/Applications/Safari.app"), iconPath: URL(fileURLWithPath: "/Applications/Safari.app/Contents/Resources/AppIcon.icns")),
-    InstalledApp(name: "Xcode", path: URL(fileURLWithPath: "/Applications/Xcode.app"), iconPath: URL(fileURLWithPath: "/Applications/Xcode.app/Contents/Resources/Xcode.icns")),
+    InstalledApp(
+        name: "Safari",
+        path: URL(fileURLWithPath: "/Applications/Safari.app"),
+        iconPath: URL(fileURLWithPath: "/Applications/Safari.app/Contents/Resources/AppIcon.icns"),
+        dataLocations: [
+            PathInfo(location: URL(fileURLWithPath: "/Applications/Safari.app")),
+        ]
+    ),
+    InstalledApp(
+        name: "Xcode",
+        path: URL(fileURLWithPath: "/Applications/Xcode.app"),
+        iconPath: URL(fileURLWithPath: "/Applications/Xcode.app/Contents/Resources/Xcode.icns"),
+        dataLocations: [
+            PathInfo(location: URL(fileURLWithPath: "/Applications/Xcode.app")),
+        ]
+    ),
 ]
 
 class AppFetcherPreview: Fetcher {
